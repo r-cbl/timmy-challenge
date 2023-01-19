@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+{% if mountain_list %}
+    <ul>
+    {% for mountain in mountain_list %}
+        <li><a href="/timmy_mountains/{{ mountain.id }}/">{{ mountain.content }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No mountains are available.</p>
+{% endif %}
+</body>
+</html>
