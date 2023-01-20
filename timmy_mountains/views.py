@@ -36,15 +36,13 @@ def with_tunnels(request, mountain_with_tunnels_id):
 
 
 @api_view(['POST'])
-@parser_classes([JSONParser])
 def create_mountain(request):
-    # mountain_data = JSONParser().parse(request, media_type="text/plain; charset=utf-8")
-    # mountain_serializer = MountainSerializer(data=mountain_data)
-    # if mountain_serializer.is_valid():
-    #     mountain_serializer.save
-    # return JsonResponse(mountain_serializer.data, status=status.HTTP_201_CREATED)
-    print(npda_mountain.read_input(r"/\\/"))
-    print(npda_mountain.accepts_input(r"\//\ "))
+    print(request.POST.get('mountain'))
+    str_to_cast = request.POST.get('mountain')
+    str_to_cast = str_to_cast.replace('\\', 'b')
+    print(str_to_cast)
+    print(npda_mountain.accepts_input(str_to_cast))
+    #  print(npda_mountain.accepts_input(r"abba"))
     return HttpResponse("You're testing the automata")
     # if mountain_serializer.is_valid():
     #     try:
