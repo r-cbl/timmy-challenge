@@ -1,6 +1,6 @@
 from django.core.exceptions import ValidationError
 from django.db import models
-from timmy_mountains.npdas import *
+from timmy_mountains.dpdas import *
 
 
 #  validators
