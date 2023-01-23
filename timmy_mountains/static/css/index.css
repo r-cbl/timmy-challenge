@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+}
+
+body {
+    background-color: #000;
+}
+
+a:link, a:visited, a:active {
+  text-decoration:none;
+  color: aliceblue;
+}
+
+#api-button {
+    margin: 3vw;
+}
+
