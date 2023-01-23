@@ -16,6 +16,8 @@ class MountainHelper:
         return self.dpda_mountain_tunnel.accepts_input(characters)
 
     def validate_fix_not_mountain(self, characters):
+        if len(characters) > 1000:
+            return 0
         if not self.validate_mountain(characters):
             return self.fix_mountain(characters)
 
