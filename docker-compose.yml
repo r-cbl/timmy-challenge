@@ -1,0 +1,21 @@
+web:
+  build: .
+  environment:
+    MYENV: EXAMPLE
+  volumes:
+    - .:/code
+web_migrate:
+  extends:
+    service: web
+  command: python manage.py migrate
+web_test:
+  extends:
+    service: web
+  command: python manage.py test timmy_mountains/test
+web_run:
+  extends:
+    service: web
+  command: python manage.py runserver 0.0.0.0:8000
+  ports:
+    - "8000:8000"
+

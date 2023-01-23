@@ -1,23 +1,26 @@
-###
+# Timmy Challenge
 
-# Api 🚀
-### Postman collection
-### https://documenter.getpostman.com/view/25152348/2s8ZDa1gaq 
+## Challenge
+Timmy challenge [URL](https://airnguru-challenge.s3.amazonaws.com/Airnguru+preinterview+challenge+(With+Watermark).pdf)
 
-# Req 🩺
-### python 3
-### Django==4.1.5
-### djangorestframework
-### django-cors-headers
-### automata-lib
+## Requirement
+- Docker compose
 
-# Run 🏁
-### source venv/bin/activate
-### python3 manage.py runserver
-### python3 manage.py startapp timmy_mountains
-### http://localhost:8000/timmy_challenge/timmy_mountains/
+## Api  🚀
+ [![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/25152348/2s8ZDa1gaq)
+
+# App 🏁
+```bash
+docker-compose up -d
+```
+Local API [URL](http://localhost:8000/timmy_challenge/timmy_mountains/)
 
 # Testing 🕵️‍
-## python3 manage.py test timmy_mountains/test
-
+```bash
+docker-compose up timmy-challenge_web_test
+```
+```bash
+python manage.py test timmy_mountains/test
+```
+Jan 2023
 
