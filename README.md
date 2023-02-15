@@ -27,4 +27,4 @@ docker-compose up timmy-challenge_web_test
 ```bash
 python manage.py test timmy_mountains/test
 ```
-Jan 2023 [URL](https://airnguru-challenge.s3.amazonaws.com/Airnguru+preinterview+challenge+(With+Watermark).pdf)
+Jan 2023
