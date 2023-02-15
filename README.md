@@ -2,9 +2,9 @@
 
 ## Challenge
 
-1. Check if the input is a valid mountain (uses pushdown automaton)
+1. Check if the input is a valid mountain (with pushdown automaton)
 
-2. Check if the input is a valid mountain wwith tunnels (uses pushdown automaton)
+2. Check if the input is a valid mountain wwith tunnels (with pushdown automaton)
 
 3. Get the minimum amount of changes to turn an invalid mountain into a valid one
 
