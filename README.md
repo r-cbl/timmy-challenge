@@ -1,7 +1,12 @@
 # Timmy Challenge
 
 ## Challenge
-Timmy challenge [URL](https://airnguru-challenge.s3.amazonaws.com/Airnguru+preinterview+challenge+(With+Watermark).pdf)
+
+1. Check if the input is a valid mountain (uses pushdown automaton)
+
+2. Check if the input is a valid mountain wwith tunnels (uses pushdown automaton)
+
+3. Get the minimum amount of changes to turn an invalid mountain into a valid one
 
 ## Requirement
 - Docker compose
@@ -22,5 +27,4 @@ docker-compose up timmy-challenge_web_test
 ```bash
 python manage.py test timmy_mountains/test
 ```
-Jan 2023
-
+Jan 2023 [URL](https://airnguru-challenge.s3.amazonaws.com/Airnguru+preinterview+challenge+(With+Watermark).pdf)
